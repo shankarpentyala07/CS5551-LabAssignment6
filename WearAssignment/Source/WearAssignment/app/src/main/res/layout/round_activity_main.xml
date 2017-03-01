@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="com.example.shankarpentyala.wearassignment.MainActivity"
+    tools:deviceIds="wear_round">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:hint="Search Query"
+        android:layout_marginLeft="105dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/searchtext"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:src="@drawable/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:width ="20dp"
+        android:layout_alignStart="@+id/text"
+        android:layout_above="@+id/clickbtn"
+        android:layout_alignEnd="@+id/text"
+        android:layout_below="@+id/searchtext" />
+
+    <TextView
+        android:id="@+id/text"
+        android:textColor="@color/black_86p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_round"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Click Here"
+        android:textStyle="italic"
+        android:textAllCaps="false"
+       android:textColor="@color/btn_colored_background_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickbtn"
+        android:width="1dp"
+        android:height="1dp"
+        android:scaleType="fitCenter"
+        android:onClick="images"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
